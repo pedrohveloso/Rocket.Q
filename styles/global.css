@@ -9,24 +9,24 @@
 }
 
 html {
-  --black: #0D114F;
-  --white: #FAFAFA;
-  --red: #E83F5B;
-  --light-blue: #E0ECFF;
-  --blue: #3485FF;
-  --background: #FBFCFF;
+  --black: #0d114f;
+  --white: #fafafa;
+  --red: #e83f5b;
+  --light-blue: #e0ecff;
+  --blue: #3485ff;
+  --background: #fbfcff;
   --overlay: #040911;
-  --icons-details: #A5B0C1;
+  --icons-details: #a5b0c1;
 
-  --grey-dark: #4D5E77;
-  --grey-blue: #A1B2CD;
-  --grey-medium: #D3D9E2;
-  --grey-light: #E5EAF1;
+  --grey-dark: #4d5e77;
+  --grey-blue: #a1b2cd;
+  --grey-medium: #d3d9e2;
+  --grey-light: #e5eaf1;
+  --grey-medium: #eaecf2;
 
   /* Adaptando o padrão de 16px para 10px */
 
   font-size: 62.5%;
-
 }
 
 body {
@@ -35,7 +35,10 @@ body {
   background: var(--background);
 }
 
-body, button, input, textarea {
+body,
+button,
+input,
+textarea {
   font-size: clamp(14px, 1.6rem, 2vw);
 
   font-family: 'Open Sans', sans-serif;
@@ -60,12 +63,15 @@ body, button, input, textarea {
 
 /* ----- Input and Buttons ----- */
 
-input, button, .button {
+input,
+button,
+.button {
   border-radius: 0.8rem;
   height: 5rem;
 }
 
-button, .button {
+button,
+.button {
   font-family: 'Poppins';
   font-weight: 500;
   line-height: 0;
@@ -82,7 +88,8 @@ button, .button {
   cursor: pointer;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   filter: brightness(1.2);
 }
 
@@ -98,6 +105,20 @@ button.outlined,
   color: var(--blue);
   border: 0.2rem solid var(--blue);
 }
+
+button.red,
+.button.red {
+  background: var(--red);
+  color: var(--white);
+}
+
+button.grey,
+.button.grey {
+  background: var(--grey-light);
+  color: var(--grey-dark);
+}
+
+/*--- Header ---*/
 
 .content header {
   width: 80%;
